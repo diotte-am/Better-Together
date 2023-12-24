@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "888996437743",
+    "firebase_url": "https://team-11-cs5520-default-rtdb.firebaseio.com",
+    "project_id": "team-11-cs5520",
+    "storage_bucket": "team-11-cs5520.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888996437743:android:dedca32dcb3eff5743851a",
+        "android_client_info": {
+          "package_name": "edu.northeastern.team_11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888996437743-11mug6h8pesp8eff8qcpperd4v0kpaqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvJB75WOS5dzs_z5BpKG_OHrQtyqmrpdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888996437743-11mug6h8pesp8eff8qcpperd4v0kpaqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888996437743:android:6c4396a7dac1912243851a",
+        "android_client_info": {
+          "package_name": "edu.northeastern.team_11.BetterTogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888996437743-11mug6h8pesp8eff8qcpperd4v0kpaqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvJB75WOS5dzs_z5BpKG_OHrQtyqmrpdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888996437743-11mug6h8pesp8eff8qcpperd4v0kpaqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

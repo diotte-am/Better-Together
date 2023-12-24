@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/team11"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/team11"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Team_11"
+        tools:targetApi="33">
+        <activity
+            android:name=".BetterTogether.BTLandingPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".About.About"
+            android:exported="false" />
+        <activity
+            android:name=".A6.RandomDogActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:usesCleartextTraffic="true"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".A6.DogSearch"
+            android:exported="false" />
+        <activity
+            android:name=".A8.UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".A8.User"
+            android:exported="false" />
+        <activity
+            android:name=".A8.Landing"
+            android:exported="false" />
+        <activity
+            android:name=".A8.MessageInteraction.SendFbMessage"
+            android:exported="false" />
+        <activity
+            android:name=".BetterTogether.BTUserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".BetterTogether.BTUserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".BetterTogether.BTActivitySelect"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".A8.MessageHistory.MyFirebaseMessaging"
+            android:exported="false" />
+        <activity android:name=".A8.MessageHistory.MessageDetail" />
+        <activity android:name=".BetterTogether.BTProfile" />
+
+        <activity android:name=".BetterTogether.BTProfileEdit"/>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/channel_id" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

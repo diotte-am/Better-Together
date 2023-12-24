@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45D2FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/editTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/editTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit your Profile"
+                    android:fontFamily="@font/grand_hotel_regular"
+                    android:textSize="40dp"
+                    android:textColor="#2D4851"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8pt"
+                android:background="@drawable/rounded_registration_15"
+                android:backgroundTint="#BDEDFC"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTitle"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/editError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Failed! See error below:"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toTopOf="@+id/editEmailText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editEmailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:text="Email:"
+                    app:layout_constraintStart_toStartOf="@id/editEmail"
+                    app:layout_constraintBottom_toTopOf="@id/editEmail"
+                    app:layout_constraintTop_toBottomOf="@id/editError"/>
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_registration_5"
+                    android:hint="Email"
+                    android:textColor="#2D4851"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/editPWRules"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editError" />
+
+                <TextView
+                    android:id="@+id/editPWRules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Passwords must be x characters long and contain a number"
+                    android:textAlignment="center"
+                    android:textSize="11dp"
+                    android:textColor="#2D4851"
+                    app:layout_constraintBottom_toTopOf="@id/editPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_registration_5"
+                    android:hint="New Password"
+                    android:textColor="#2D4851"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editPWRules" />
+
+                <EditText
+                    android:id="@+id/editConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_registration_5"
+                    android:hint="Confirm New Password"
+                    android:textColor="#2D4851"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8pt"
+                android:background="@drawable/rounded_registration_15"
+                android:backgroundTint="#BDEDFC"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+                <TextView
+                    android:id="@+id/editNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Name:"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="@id/editFirstName"
+                    app:layout_constraintBottom_toTopOf="@id/editFirstName"
+                    />
+
+                <EditText
+                    android:id="@+id/editFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/rounded_registration_5"
+                    android:hint="First Name"
+                    android:textColor="#2D4851"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_registration_5"
+                    android:hint="Last Name"
+                    android:textColor="#2D4851"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editFirstName" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/editRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editLastName">
+
+                    <TextView
+                        android:id="@+id/editBirthdayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Birthday:"
+                        app:layout_constraintStart_toStartOf="@id/editBirthdayMonth"
+                        app:layout_constraintBottom_toTopOf="@id/editBirthdayMonth"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <EditText
+                        android:id="@+id/editBirthdayMonth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="mm"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#2D4851"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintWidth_percent="0.15" />
+
+                    <EditText
+                        android:id="@+id/editBirthdayDay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="dd"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#2D4851"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/editBirthdayMonth"
+                        app:layout_constraintWidth_percent="0.15" />
+
+                    <EditText
+                        android:id="@+id/editBirthdayYear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="yyyy"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#2D4851"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/editBirthdayDay"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintWidth_percent="0.2" />
+
+                    <TextView
+                        android:id="@+id/editPronounText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Pronouns (Optional):"
+                        app:layout_constraintStart_toStartOf="@id/editPronouns"
+                        app:layout_constraintBottom_toTopOf="@id/editPronouns"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+                    <EditText
+                        android:id="@+id/editPronouns"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="Pronouns"
+                        android:padding="10dp"
+                        android:textColor="#2D4851"
+                        app:layout_constraintBottom_toBottomOf="@+id/editBirthdayMonth"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/editBirthdayMonth"
+                        app:layout_constraintWidth_percent="0.40" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/editRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editRow1">
+
+                    <TextView
+                        android:id="@+id/editLocationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location:"
+                        android:layout_marginBottom="1dp"
+                        app:layout_constraintStart_toStartOf="@id/editCity"
+                        app:layout_constraintBottom_toTopOf="@id/editCity"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <EditText
+                        android:id="@+id/editCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="City"
+                        android:textColor="#2D4851"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.55" />
+
+
+                    <EditText
+                        android:id="@+id/editCountry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_registration_5"
+                        android:hint="Country"
+                        android:textColor="#2D4851"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCity"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/editCity"
+                        app:layout_constraintWidth_percent="0.40" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/editBioText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio:"
+                    android:layout_marginBottom="1dp"
+                    app:layout_constraintStart_toStartOf="@id/editBio"
+                    app:layout_constraintBottom_toTopOf="@id/editBio"
+                    />
+
+                <EditText
+                    android:id="@+id/editBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_registration_5"
+                    android:gravity="top"
+                    android:hint="Introduce Yourself!"
+                    android:textColor="#2D4851"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editRow2" />
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#FFB800"
+                    android:elevation="10dp"
+
+                    android:onClick="savePage"
+                    android:text="Submit Edit"
+                    android:textColor="#2D4851"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editBio" />
+
+                <TextView
+                    android:id="@+id/editWordCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="0/100"
+                    app:layout_constraintEnd_toEndOf="@id/editBio"
+                    app:layout_constraintTop_toBottomOf="@id/editBio" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

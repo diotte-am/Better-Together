@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!--  Better Together  -->
+    <color name="orange_background">#FFB800</color>
+    <color name="blue_menu">#45D2FF</color>
+    <color name="green_menu">#A1FFB6</color>
+    <color name="light_blue_menu">#A1E8FF</color>
+    <color name="yellow_menu">#FDF295</color>
+    <color name="pink_menu">#FFDFAD</color>
+    <color name="pink_background">#FFE6B6</color>
+    <color name="light_blue_background">#D4F5FF</color>
+    <color name="meditation_button">#FFDFAD</color>
+    <color name="affirmation_button">#fdf294</color>
+    <color name="yoga_button">#a2e8ff</color>
+    <color name="journal_button">#a1ffb6</color>
+    <color name="activity_button_text">#555859</color>
+    <color name="post_item_color_1">#A1E8FF</color>
+    <color name="post_item_color_2">#A1FFB6</color>
+
+</resources>

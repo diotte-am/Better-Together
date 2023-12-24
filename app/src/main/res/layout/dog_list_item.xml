@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#C7FFC9"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+
+        >
+
+        <TextView
+            android:id="@+id/dogBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/breed"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/dogImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dogImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/dog_picture"
+            app:layout_constraintBottom_toTopOf="@id/dogTemperament"
+            app:layout_constraintEnd_toStartOf="@id/textCont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dogBreed"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/dogBredFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="#2E7D32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/dogTemperament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="2dp"
+            android:text="@string/temperament"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="#2E7D32"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@id/dogBredFor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogImage" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/textCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/dogTemperament"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/dogImage"
+            app:layout_constraintTop_toBottomOf="@id/dogBreed">
+
+            <TextView
+                android:id="@+id/dogHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#2E7D32"
+                app:layout_constraintBottom_toTopOf="@id/dogHeight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dogWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#2E7D32"
+                app:layout_constraintBottom_toTopOf="@id/dogLifeSpan"
+                app:layout_constraintStart_toStartOf="@+id/dogHeight"
+                app:layout_constraintTop_toBottomOf="@+id/dogHeight" />
+
+            <TextView
+                android:id="@+id/dogLifeSpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#2E7D32"
+                app:layout_constraintBottom_toTopOf="@id/dogBreedGroup"
+                app:layout_constraintStart_toStartOf="@+id/dogWeight"
+                app:layout_constraintTop_toBottomOf="@+id/dogWeight" />
+
+            <TextView
+                android:id="@+id/dogBreedGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#2E7D32"
+                app:layout_constraintStart_toStartOf="@+id/dogLifeSpan"
+                app:layout_constraintTop_toBottomOf="@+id/dogLifeSpan" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

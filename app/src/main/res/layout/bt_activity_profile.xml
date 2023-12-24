@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45D2FF"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8pt"
+        android:background="@drawable/rounded_registration_15"
+        android:backgroundTint="#BDEDFC"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proPronounHeading"
+        tools:layout_editor_absoluteX="18dp">
+
+
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="1dp"
+            android:text="Name:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/proNameText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/proNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Firstname Lastname"
+            android:textAlignment="textStart"
+            android:textColor="#2D4851"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proName"
+
+            />
+
+        <TextView
+            android:id="@+id/proBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Birthday:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/proBirthdayText"
+            app:layout_constraintStart_toStartOf="@id/proBirthdayText"
+            app:layout_constraintTop_toBottomOf="@id/proNameText" />
+
+        <TextView
+            android:id="@+id/proBirthdayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Month Day"
+            android:textColor="#2D4851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proBirthday" />
+
+        <TextView
+            android:id="@+id/proAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Age:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/proAgeText"
+            app:layout_constraintStart_toStartOf="@id/proAgeText"
+            app:layout_constraintTop_toBottomOf="@id/proBirthdayText" />
+
+        <TextView
+            android:id="@+id/proAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Month Day"
+            android:textColor="#2D4851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proAge" />
+
+        <TextView
+            android:id="@+id/proLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Location:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/proLocationText"
+            app:layout_constraintStart_toStartOf="@id/proLocationText"
+            app:layout_constraintTop_toBottomOf="@id/proAgeText" />
+
+        <TextView
+            android:id="@+id/proLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="City, Country"
+            android:textColor="#2D4851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proLocation" />
+
+        <TextView
+            android:id="@+id/proBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Bio:"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/proBioText"
+            app:layout_constraintStart_toStartOf="@id/proBioText"
+            app:layout_constraintTop_toBottomOf="@id/proLocationText" />
+
+        <TextView
+            android:id="@+id/proBioText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis pa "
+            android:textColor="#2D4851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proBio" />
+
+        <TextView
+            android:id="@+id/proStreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            android:text="Current Streak: 3"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proBioText"
+
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#FFB800"
+
+        android:onClick="editProfile"
+        android:text="Edit"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/proPicFrame"
+    android:layout_width="175dp"
+    android:layout_height="175dp"
+    app:layout_constraintVertical_bias=".3"
+    app:layout_constraintBottom_toTopOf="@+id/proNameHeading"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" >
+
+    <ImageView
+        android:id="@+id/proOutline"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:background="@drawable/bg_circle"
+
+        android:backgroundTint="@color/white"
+        android:outlineProvider="background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/proPic"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_circle"
+        android:outlineProvider="background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/proNameHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/proPronounHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proPicFrame" />
+
+    <TextView
+        android:id="@+id/proPronounHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronoun/Pronoun"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/topLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proNameHeading" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goHome"
+        app:srcCompat="@drawable/home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Team 11</string>
+    <string name="team_name">Team 11</string>
+    <string name="web_service">At Your Service</string>
+    <string name="not_sure_which_dog_you_want_to_see">Not sure which dog you want to see?</string>
+    <string name="surprise_me">Surprise me!</string>
+    <string name="search_by_breed">Search by breed:</string>
+    <string name="show_picture_only">Show picture only</string>
+    <string name="search">Search</string>
+    <string name="of_results"># of results</string>
+    <string name="randomizer">Randomizer</string>
+    <string name="breed">Breed</string>
+    <string name="dog_height">Dog Height</string>
+    <string name="life_span">Life Span</string>
+    <string name="dog_weight">Dog Weight</string>
+    <string name="bred_for">Bred for</string>
+    <string name="dog_picture">Dog Picture</string>
+    <string name="breed_group">Breed Group</string>
+    <string name="temperament">Temperament</string>
+    <string name="enter_a_breed_below_nor_roll_the_die_to_see_10_random_dogs">Enter a breed below\nor roll the die to see 10 random dogs</string>
+    <string name="dog_search">Dog Search (A6)</string>
+    <string name="send_sticker">Send Sticker (A8)</string>
+    <string name="fetch">fetch</string>
+    <string name="fetching">Fetching...</string>
+    <string name="channel_id">team-11-cs5520</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username_signup">Username: </string>
+    <string name="signup_prompt">Please Create an Account</string>
+    <string name="stick_it">Stick It To Em!</string>
+    <string name="send_message_prompt">Send a Sticker</string>
+    <string name="view_history">View Sticker History</string>
+    <string name="new_message">New Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_description">Tab Selector for Home, Post, and Settings</string>
+    <string name="meditation_button">Meditations</string>
+    <string name="affirmation_button">Affirmations</string>
+    <string name="yoga_button">Yoga Practice</string>
+    <string name="journal_button">Journaling</string>
+    <string name="activity_prompt">Please select an activity:</string>
+    <string name="link1">Link 1</string>
+    <string name="link2">Link 2</string>
+    <string name="link3">Link 3</string>
+    <string name="BT_yoga_complete" >Good job, you completed a Yoga Practice!</string>
+    <string name="BT_affirmations_complete" >Good job, you completed an Affirmations Session!</string>
+    <string name="BT_journaling_complete" >Good job, you completed an Journaling Session!</string>
+    <string name="BT_meditation_complete" >Good job, you completed an Meditation Session!</string>
+
+
+    <string-array name="gender_array">
+        <item>No Answer</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Non Binary</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+</resources>
